@@ -1,0 +1,4 @@
+.idea/ 
+data/ 
+homework.py 
+*.ipynb_checkpoints/ 
