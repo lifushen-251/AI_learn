@@ -36,7 +36,7 @@ point_value = alien_0.get('points', 'No point value assigned.')
 print(point_value)
 
 
-# #Store dictionarys in a dictionary
+# Store dictionarys in a dictionary
 users = {
       'aeinstein': {
           'first': 'albert',
