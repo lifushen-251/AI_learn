@@ -1,0 +1,5 @@
+cd /d D:\python_learn
+git add .
+git status
+git remote -v
+git push -u origin learn_notebook
