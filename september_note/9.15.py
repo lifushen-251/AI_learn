@@ -10,7 +10,7 @@ for i in zip(li,lis):
 
 
 #map()的应用
-li = [1,2,3]
+li=[1,2,3]
 def funa(x):
     return x*5
 mp= map(funa,li)

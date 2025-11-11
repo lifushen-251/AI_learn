@@ -8,6 +8,7 @@ with open('d:\\python_learn\\October_note\\number2.txt') as file_object:  #打�
 print(contents)
 print(type(contents))     
 filename = "pi_digits.txt"   #注意，这样做需要打开的文件在VSCode的工作目录下，而非文件同目录
+
 with open(filename) as file_object:
     for line in file_object:
         print(line.rstrip())     #文本末有一个看不见的换行符，print自动再加一个换行符，可使用rstrip()取消一次换行  
@@ -31,17 +32,21 @@ print(pi_string)
 print(len(pi_string))
 
 filename = 'd:\\python_learn\\October_note\\programming.txt'
+
 with open(filename, 'w') as file_object:   #第二个实参'w'表示写入模式
 #打开文件时，可指定读取模式（'r'）、写入模式（'w'）、附加模式'a'）或读写模式（'r+'）。如果省略了模式实参，Python将以默认的只读模式打开文件。
 #警告！以写入模式（'w'）打开文件时千万要小心，因为如果指定的文件已经存在，Python将在返回文件对象前清空该文件的内容。
     file_object.write("I love programming.")
     file_object.write("I love creating new games.")   #写入文本时python不会主动换行，需要自己添加换行符\n
+
 with open(filename) as file_object:
     contents = file_object.read()
 print(f"未加换行符内容为：\n{contents}")
+
 with open(filename, 'w') as file_object:  
     file_object.write("I love programming.\n")
     file_object.write("I love creating new games.\n")   
+
 with open(filename) as file_object:
     contents = file_object.read()
 print(f"加入换行符后内容为：\n{contents}\n此外，以写入模式打开文件删除了第一次写入的内容")
@@ -52,7 +57,7 @@ with open(filename, 'a') as file_object:
 
 #practice:
 filename = 'd:\\python_learn\\October_note\\practice_feedback.txt'
-with open(filename,"w") as file_object:
+with open(filename, "w", encoding="utf-8") as file_object:
     file_object.write("以下为用户反馈\n")
 terminator=True
 feedbacks=[]

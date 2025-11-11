@@ -1,9 +1,11 @@
 class MathHelper:
+    
     def PrimeNumber_judge(n):
         for i in range (2,int(n**0.5)+1):
             if n%i==0:
                 return "这不是个素数"
         return "这是个素数"
+    
     def PrimeNumber_search(n):
         list1=[]
         m=0
@@ -19,6 +21,7 @@ class MathHelper:
                 list1.append(x)
                 m=m+1
         return f"{n}以内共有{m}个素数，他们是：\n{list1}"
+    
     def ascending_order(list1):
         if type(list1)!=list:
             return "请输入列表"
@@ -32,6 +35,7 @@ class MathHelper:
             list2.append(j)
             list1.remove(j)
         return list2
+    
     def descending_order(list1):
         if type(list1)!=list:
             return "请输入列表"
@@ -45,6 +49,7 @@ class MathHelper:
             list2.append(j)
             list1.remove(j)
         return list2
+    
     def maximum(list1):
         if type(list1)!=list:
             return "请输入列表"
@@ -53,6 +58,7 @@ class MathHelper:
             if i>j:
                 j=i
         return j
+    
     def minimum(list1):
         if type(list1)!=list:
             return "请输入列表"
@@ -61,6 +67,7 @@ class MathHelper:
             if i<j:
                 j=i
         return j
+    
     def ascending_order_2(list1):
         n=len(list1)
         for i in range(1,n):
