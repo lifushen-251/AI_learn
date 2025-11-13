@@ -25,6 +25,9 @@ def add(x,y):
 z=reduce(add,li)
 print(z)
 
+#sum()的应用
+li=[1,2,3,4]
+print(sum(li))
 
 #拆包
 tua=(1,2,3,4)
