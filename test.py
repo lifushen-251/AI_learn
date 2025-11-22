@@ -9,3 +9,8 @@ print(Set)
 #将一个可迭代对象依次加到集合中
 Set.update([1, '1', '4'])
 print(Set)
+
+
+nums = [2,7,11,15]
+target = 9
+
